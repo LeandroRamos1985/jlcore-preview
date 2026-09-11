@@ -1,0 +1,8 @@
+# PREVIEW MODE — intentionally hidden from search engines.
+User-agent: *
+Disallow: /
+
+# PRODUCTION: replace the block above with:
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.jlcore.com/sitemap.xml
