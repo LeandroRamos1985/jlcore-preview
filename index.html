@@ -3,39 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JL+CoRE | Boston Real Estate & Property Management</title>
-  <meta name="description" content="A boutique Boston real estate brokerage for buying, selling, renting and property management." />
-  <meta name="theme-color" content="#102733" />
+  <title>JL+CoRE | Boutique Boston Real Estate & Property Management</title>
+  <meta name="description" content="Boutique Boston real estate, property management and personalized guidance with Jessica Later and JL+CoRE." />
   <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#09171e" />
   <link rel="canonical" href="https://www.jlcore.com/" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://videos.pexels.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="JL+CoRE | Boston Real Estate. Elevated." />
-  <meta property="og:description" content="Boutique real estate and property management in Boston, Massachusetts." />
-  <meta property="og:image" content="https://leandroramos1985.github.io/jlcore-preview/assets/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:title" content="JL+CoRE | Boston Real Estate, Elevated" />
+  <meta property="og:description" content="A boutique real estate and property management experience in Boston." />
+  <meta property="og:image" content="https://leandroramos1985.github.io/jlcore-preview/og-image.png" />
   <meta property="og:url" content="https://leandroramos1985.github.io/jlcore-preview/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://videos.pexels.com" />
-    <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Jessica Later & JL+CoRE",
-    "url": "https://www.jlcore.com/",
-    "telephone": "+1-617-286-4112",
-    "email": "business@jlcore.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "89 W Concord Street",
-      "addressLocality": "Boston",
-      "addressRegion": "MA",
-      "postalCode": "02118",
-      "addressCountry": "US"
-    }
+    "@context":"https://schema.org",
+    "@type":"RealEstateAgent",
+    "name":"Jessica Later & JL+CoRE",
+    "url":"https://www.jlcore.com/",
+    "telephone":"+1-617-286-4112",
+    "email":"hello@jlcore.com",
+    "address":{"@type":"PostalAddress","streetAddress":"89 W Concord Street","addressLocality":"Boston","addressRegion":"MA","postalCode":"02118","addressCountry":"US"}
   }
   </script>
 </head>
@@ -45,239 +39,235 @@
 
   <header class="header" id="top">
     <a class="brand" href="#top" aria-label="JL+CoRE home">
-      <span class="brand-mark" aria-hidden="true">JL</span>
-      <span class="brand-word">JL<span>+</span>CoRE</span>
+      <span class="brand-mark">JL</span>
+      <span class="brand-copy"><strong>JL+CoRE</strong><small>Boston · MA</small></span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#properties">Properties</a>
-      <a href="#services">Buy / Sell</a>
-      <a href="#management">Management</a>
-      <a href="#about">About</a>
+      <a href="#listings">Listings</a>
+      <a href="#services">Services</a>
+      <a href="#jessica">Jessica</a>
+      <a href="#reviews">Reviews</a>
     </nav>
     <a class="header-cta" href="#contact">Work with us <span>↗</span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
   </header>
 
   <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Mobile navigation">
-    <a href="#properties">Properties</a><a href="#services">Buy / Sell</a><a href="#management">Management</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#listings">Listings</a><a href="#services">Services</a><a href="#jessica">Jessica</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
   </nav>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/images/brookline-instagram.jpg" aria-hidden="true">
+      <video class="hero-video motion-media" autoplay muted loop playsinline preload="metadata" poster="brookline.jpg" aria-hidden="true">
         <source src="https://videos.pexels.com/video-files/12595925/12595925-hd_1920_1080_30fps.mp4" type="video/mp4" />
       </video>
       <div class="hero-poster" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-lines" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <div class="hero-kicker reveal">Trusted boutique brokerage · Boston, MA</div>
-        <h1 class="reveal" id="hero-title">Boston real estate.<br><em>Elevated.</em></h1>
-        <p class="reveal">Buying, selling, renting and property management with a local team built around personal service, sharp market knowledge and long-term relationships.</p>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="kicker reveal">Boston · Boutique Real Estate · Property Management</span>
+        <h1 id="hero-title" class="reveal">Boston real estate,<br><em>beautifully personal.</em></h1>
+        <p class="reveal">Thoughtful guidance for buying, selling, renting and managing property — with the local perspective and personal attention of a boutique brokerage.</p>
         <div class="hero-actions reveal">
-          <a class="button button-orange" href="#properties">Explore properties <span>↗</span></a>
-          <a class="button button-glass" href="#contact">Work with JL+CoRE <span>↗</span></a>
+          <a class="button button-accent" href="https://www.jlcore.com/our-core-listings/" target="_blank" rel="noopener">Explore current listings <span>↗</span></a>
+          <a class="button button-ghost" href="#contact">Work with JL+CoRE <span>↗</span></a>
         </div>
       </div>
-      <div class="hero-side reveal" aria-label="JL+CoRE business highlights">
-        <span class="hero-side-index">01</span>
-        <p>Residential real estate<br>Property management<br>Boston, Massachusetts</p>
+      <div class="hero-signature reveal">
+        <span>Jessica Later</span>
+        <small>Principal Broker & Owner</small>
       </div>
       <button class="motion-toggle" type="button" aria-pressed="false"><span class="motion-dot"></span><span class="motion-label">Pause motion</span></button>
+      <a class="scroll-cue" href="#listings" aria-label="Scroll to listings"><span></span>Discover</a>
     </section>
 
-    <div class="credential-marquee" aria-label="JL+CoRE highlights">
-      <div class="marquee-track">
-        <span>JL+CoRE</span><i>+</i><span>Boston Real Estate</span><i>+</i><span>Property Management</span><i>+</i><span>Best of Zillow ’23 · ’24</span><i>+</i><span>Trusted Boutique Brokerage</span><i>+</i>
-        <span aria-hidden="true">JL+CoRE</span><i aria-hidden="true">+</i><span aria-hidden="true">Boston Real Estate</span><i aria-hidden="true">+</i><span aria-hidden="true">Property Management</span><i aria-hidden="true">+</i><span aria-hidden="true">Best of Zillow ’23 · ’24</span><i aria-hidden="true">+</i><span aria-hidden="true">Trusted Boutique Brokerage</span><i aria-hidden="true">+</i>
-      </div>
-    </div>
-
-    <section class="intro section" id="intro">
-      <div class="eyebrow reveal">A more personal way to move</div>
-      <div class="intro-grid">
-        <h2 class="display reveal">Local expertise.<br><em>Human guidance.</em></h2>
-        <div class="intro-copy reveal">
-          <p>JL+CoRE is a boutique brokerage built around personal service: close enough to know the details, experienced enough to navigate a competitive market, and responsive enough to make the process feel genuinely personal.</p>
-          <a class="text-link" href="#about">Meet JL+CoRE <span>↗</span></a>
-        </div>
+    <section class="statement section section-light">
+      <div class="statement-mark reveal">JL+</div>
+      <div class="statement-copy">
+        <span class="eyebrow reveal">A boutique approach</span>
+        <h2 class="display reveal">Big-market expertise.<br><em>Small-team attention.</em></h2>
+        <p class="reveal">JL+CoRE brings together residential real estate and property management with a relationship-first approach. The result is a more considered, more responsive experience across every stage of a move or investment.</p>
       </div>
     </section>
 
-    <section class="search-section section" id="properties" aria-labelledby="property-search-title">
-      <div class="search-heading reveal">
-        <span class="eyebrow">Property search</span>
-        <h2 class="display" id="property-search-title">Find the address<br><em>that fits the life.</em></h2>
-      </div>
-      <form class="property-search reveal" action="#contact" aria-label="Property search">
-        <label><span>Location</span><input type="text" name="location" placeholder="Neighborhood, city or address" /></label>
-        <label><span>Price</span><select name="price"><option>Any price</option><option>$500K–$750K</option><option>$750K–$1M</option><option>$1M+</option></select></label>
-        <label><span>Beds</span><select name="beds"><option>Any beds</option><option>1+</option><option>2+</option><option>3+</option></select></label>
-        <label><span>Type</span><select name="type"><option>All homes</option><option>Condo</option><option>Single family</option><option>Multi-family</option></select></label>
-        <button class="search-submit" type="submit">Start search <span>→</span></button>
-      </form>
-      <p class="technical-note reveal">Tell us what you’re looking for — neighborhood, budget and property type — and the JL+CoRE team can help guide your search.</p>
-    </section>
-
-    <section class="portfolio section" aria-labelledby="portfolio-title">
-      <div class="portfolio-head">
+    <section class="listings section section-ink" id="listings" aria-labelledby="listings-title">
+      <div class="section-head split-head">
         <div>
-          <span class="eyebrow reveal">JL+CoRE in the market</span>
-          <h2 class="display reveal" id="portfolio-title">Real homes.<br><em>Real Boston stories.</em></h2>
+          <span class="eyebrow light reveal">Selected real estate</span>
+          <h2 class="display light reveal" id="listings-title">Homes with a story.<br><em>Boston at the center.</em></h2>
         </div>
-        <p class="reveal">A closer look at homes and spaces from the JL+CoRE portfolio — presented with the care, context and local perspective every move deserves.</p>
-      </div>
-      <div class="portfolio-grid">
-        <article class="property-feature property-feature-large reveal">
-          <img src="assets/images/brookline-instagram.jpg" alt="Bright Brookline living room featured by JL+CoRE" loading="lazy" />
-          <div class="property-caption"><span>Brookline</span><strong>Residential property</strong><small>From the JL+CoRE portfolio</small></div>
-        </article>
-        <article class="property-feature reveal">
-          <img src="assets/images/jamaica-plain-instagram.jpg" alt="JL+CoRE property in Jamaica Plain" loading="lazy" />
-          <div class="property-caption"><span>Jamaica Plain</span><strong>14 Goodrich Road</strong><small>2 bed · 1 bath · 1,143 sq ft · parking</small></div>
-        </article>
-        <article class="property-feature reveal">
-          <img src="assets/images/kitchen-instagram.jpg" alt="Residential kitchen shared by JL+CoRE" loading="lazy" />
-          <div class="property-caption"><span>Residential</span><strong>Spaces that sell a lifestyle</strong><small>Presentation · positioning · guidance</small></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="services" id="services" aria-labelledby="services-title">
-      <div class="services-sticky section">
-        <span class="eyebrow reveal">How JL+CoRE helps</span>
-        <h2 class="display reveal" id="services-title">One relationship.<br><em>Every move.</em></h2>
-      </div>
-      <div class="service-list">
-        <article class="service-row reveal"><span class="service-number">01</span><div><h3>Buy</h3><p>Local insight, direct communication and a clear process for navigating Boston’s competitive housing market.</p></div><a href="#contact" aria-label="Talk about buying">↗</a></article>
-        <article class="service-row reveal"><span class="service-number">02</span><div><h3>Sell</h3><p>Pricing, positioning, presentation and hands-on representation built around your property and your timeline.</p></div><a href="#valuation" aria-label="Request a home valuation">↗</a></article>
-        <article class="service-row reveal"><span class="service-number">03</span><div><h3>Rent</h3><p>Guidance for renters and owners through Boston’s fast-moving rental market.</p></div><a href="#contact" aria-label="Talk about renting">↗</a></article>
-        <article class="service-row service-row-accent reveal"><span class="service-number">04</span><div><h3>Manage</h3><p>Operational support for owners who want their property handled with the same care as a sale.</p></div><a href="#management" aria-label="See property management">↓</a></article>
-      </div>
-    </section>
-
-    <section class="management" id="management" aria-labelledby="management-title">
-      <div class="management-media">
-        <img src="assets/images/renovation-instagram.jpg" alt="Property renovation and maintenance work shared by JL+CoRE" loading="lazy" />
-        <div class="management-card reveal">
-          <span>Property management</span>
-          <strong>From prep to occupancy — and beyond.</strong>
+        <div class="head-copy reveal">
+          <p>Selected properties and past sales from JL+CoRE’s own marketing. For current inventory and live availability, browse the brokerage’s official listing page.</p>
+          <a class="text-link light-link" href="https://www.jlcore.com/our-core-listings/" target="_blank" rel="noopener">Browse live JL+CoRE listings <span>↗</span></a>
         </div>
       </div>
-      <div class="management-copy section">
-        <span class="eyebrow reveal">For owners & investors</span>
-        <h2 class="display reveal" id="management-title">You own the asset.<br><em>We handle the details.</em></h2>
-        <p class="reveal">JL+CoRE supports owners through rental preparation, marketing, tenant inquiries, showings and ongoing management — with a hands-on approach built around protecting the property and simplifying ownership.</p>
-        <div class="management-steps reveal">
-          <span>01 · Evaluate</span><span>02 · Prepare</span><span>03 · Market</span><span>04 · Place</span><span>05 · Manage</span>
+
+      <article class="listing-editorial reveal">
+        <div class="listing-gallery gallery-a">
+          <img src="53-warren-exterior.jpg" alt="53 Warren Avenue South End exterior" loading="lazy" />
+          <img src="53-warren-interior.jpg" alt="53 Warren Avenue interior" loading="lazy" />
+          <img src="53-warren-patio.jpg" alt="53 Warren Avenue private patio" loading="lazy" />
         </div>
-        <a class="button button-dark reveal" href="#contact">Talk about your property <span>↗</span></a>
+        <div class="listing-info">
+          <span class="listing-tag">Past Sale · South End</span>
+          <h3>53 Warren Avenue #1</h3>
+          <div class="listing-price">$1,220,000 <small>sold</small></div>
+          <div class="listing-meta"><span>2 beds</span><span>2.5 baths</span><span>1,140 sq ft</span></div>
+          <p>Historic Boston character, intimate scale and a private outdoor retreat — the kind of property that makes the South End feel unmistakably its own.</p>
+        </div>
+      </article>
+
+      <article class="listing-editorial listing-editorial-reverse reveal">
+        <div class="listing-gallery gallery-b">
+          <img src="40-stedman-living.jpg" alt="40 Stedman Street living area" loading="lazy" />
+          <img src="40-stedman-bedroom.jpg" alt="40 Stedman Street bedroom" loading="lazy" />
+          <img src="40-stedman-roofdeck.jpg" alt="40 Stedman Street roof deck" loading="lazy" />
+        </div>
+        <div class="listing-info">
+          <span class="listing-tag">Past Sale · Jamaica Plain</span>
+          <h3>40 Stedman Street #40</h3>
+          <div class="listing-price">$655,000 <small>sold</small></div>
+          <div class="listing-meta"><span>2 beds</span><span>1.5 baths</span><span>1,369 sq ft</span></div>
+          <p>Generous proportions, natural light and outdoor living come together in a home that captures Jamaica Plain’s relaxed, neighborhood-driven appeal.</p>
+        </div>
+      </article>
+
+      <div class="listing-strip reveal">
+        <img src="jamaica-plain.jpg" alt="14 Goodrich Road property marketed by JL+CoRE" loading="lazy" />
+        <div><span>Jamaica Plain</span><strong>14 Goodrich Road</strong><small>2 bed · 1 bath · 1,143 sq ft · parking</small></div>
+        <a href="https://www.jlcore.com/our-core-listings/" target="_blank" rel="noopener">View current inventory <span>↗</span></a>
       </div>
     </section>
 
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="about-image reveal">
-        <img src="assets/images/jessica-instagram.jpg" alt="Jessica Later of JL+CoRE" loading="lazy" />
-        <div class="about-image-tag"><span>Principal Broker & Owner</span><strong>Jessica Later</strong></div>
-      </div>
-      <div class="about-copy">
-        <span class="eyebrow reveal">Meet Jessica</span>
-        <h2 class="display reveal" id="about-title">Boutique by design.<br><em>Personal by nature.</em></h2>
-        <p class="reveal">Jessica brings deep Boston market knowledge and the experience of larger real estate firms into a more personal boutique setting, with an emphasis on communication, local insight and long-term client relationships.</p>
-        <p class="quote reveal">Personal service, local knowledge and clear communication — from the first conversation to closing and beyond.</p>
-        <a class="text-link reveal" href="#contact">Start a conversation <span>↗</span></a>
+    <section class="jessica section section-warm" id="jessica">
+      <div class="jessica-photo reveal"><img src="jessica-later.jpg" alt="Jessica Later, Principal Broker and Owner of JL+CoRE" loading="lazy" /></div>
+      <div class="jessica-copy">
+        <span class="eyebrow reveal">Principal Broker & Owner</span>
+        <h2 class="display reveal">Meet Jessica<br><em>Later.</em></h2>
+        <p class="lead reveal">A client-first broker with deep Boston market knowledge and a reputation for being responsive, practical and genuinely invested in the people she represents.</p>
+        <p class="reveal">JL+CoRE’s boutique model is built around the kind of guidance clients repeatedly describe in their reviews: thoughtful advice, honest perspective and support that continues well beyond a transaction.</p>
+        <div class="jessica-actions reveal">
+          <a class="button button-dark" href="sms:+18607291702">Text Jessica <span>↗</span></a>
+          <a class="text-link" href="#contact">Start a conversation <span>↗</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="team-section section" aria-labelledby="team-title">
-      <div class="team-head reveal">
-        <span class="eyebrow">The CoRE team</span>
-        <h2 class="display" id="team-title">Local people.<br><em>One collaborative team.</em></h2>
+    <section class="services section section-light" id="services" aria-labelledby="services-title">
+      <div class="services-intro">
+        <span class="eyebrow reveal">One brokerage, four paths</span>
+        <h2 class="display reveal" id="services-title">A complete real estate<br><em>relationship.</em></h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span>01</span><h3>Buy</h3><p>Property search, neighborhood insight and steady guidance from first tour through closing.</p><a href="#contact">Start your search ↗</a></article>
+        <article class="service-card reveal"><span>02</span><h3>Sell</h3><p>Positioning, presentation, marketing and negotiation designed around the property and seller.</p><a href="#valuation">Request a valuation ↗</a></article>
+        <article class="service-card reveal"><span>03</span><h3>Rent</h3><p>Local context and a more personal way to navigate Boston’s rental market.</p><a href="#contact">Find a rental ↗</a></article>
+        <article class="service-card service-card-accent reveal"><span>04</span><h3>Manage</h3><p>Property management support for owners who want thoughtful oversight and a responsive local team.</p><a href="#management">Explore management ↗</a></article>
+      </div>
+    </section>
+
+    <section class="boston-film" aria-labelledby="boston-film-title">
+      <video class="film-video motion-media" autoplay muted loop playsinline preload="metadata" poster="53-warren-exterior.jpg" aria-hidden="true">
+        <source src="https://videos.pexels.com/video-files/12595930/12595930-hd_1920_1080_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="film-poster" aria-hidden="true"></div>
+      <div class="film-shade" aria-hidden="true"></div>
+      <div class="film-copy">
+        <span class="eyebrow light reveal">Rooted in Boston</span>
+        <h2 class="display light reveal" id="boston-film-title">A city of distinct<br><em>neighborhoods.</em></h2>
+        <p class="reveal">From historic brownstones to contemporary condos, every Boston address carries its own rhythm. JL+CoRE helps clients understand not just the property, but the life around it.</p>
+      </div>
+    </section>
+
+    <section class="management section section-ink" id="management">
+      <div class="management-copy">
+        <span class="eyebrow light reveal">Property Management</span>
+        <h2 class="display light reveal">Ownership,<br><em>made lighter.</em></h2>
+        <p class="reveal">JL+CoRE supports owners across rental valuation, property preparation, marketing, tenant inquiries, showings and ongoing management — combining real estate knowledge with hands-on local service.</p>
+        <a class="button button-accent reveal" href="#contact">Talk about your property <span>↗</span></a>
+      </div>
+      <div class="management-visual reveal">
+        <img src="renovation.jpg" alt="JL+CoRE property care and renovation work" loading="lazy" />
+        <div class="management-note"><span>Local oversight</span><strong>Property care with a broker’s perspective.</strong></div>
+      </div>
+    </section>
+
+    <section class="reviews section section-warm" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews-head">
+        <span class="eyebrow reveal">Client perspective</span>
+        <h2 class="display reveal" id="reviews-title">Trust, in their<br><em>own words.</em></h2>
+        <p class="reveal">Real client feedback shared by JL+CoRE.</p>
+      </div>
+      <div class="review-rail" role="region" aria-label="Client reviews">
+        <article class="review-card reveal"><span>First-Time Home Buyer</span><blockquote>“She was fantastic from the start… very helpful, informative, and never pushed me into buying a property that didn’t make sense.”</blockquote><footer>Shane T.</footer></article>
+        <article class="review-card reveal"><span>First-Time Home Buyer</span><blockquote>“JL+CoRE is absolutely fantastic. Jessica was always patient, had great answers for us and walked us through every step of the way.”</blockquote><footer>Michael V.</footer></article>
+        <article class="review-card reveal"><span>Investment Buyer & Seller</span><blockquote>“Professional, personable and extremely knowledgeable. They really were there for us every step of the way.”</blockquote><footer>Ashley Z.</footer></article>
+        <article class="review-card reveal"><span>Home Buyer</span><blockquote>“Very knowledgeable and professional — our experience working with JL+CoRE was fantastic.”</blockquote><footer>Todd M.</footer></article>
+        <article class="review-card reveal"><span>Home Buyer</span><blockquote>“Jessica is one of the most experienced and professional real estate agents I have dealt with.”</blockquote><footer>Elena M.</footer></article>
+        <article class="review-card reveal"><span>Home Buyer</span><blockquote>“Jessica is a consummate professional… a wonderful broker.”</blockquote><footer>Diane E.</footer></article>
+      </div>
+      <div class="reviews-controls reveal"><button class="review-prev" aria-label="Previous reviews">←</button><span>Swipe or scroll</span><button class="review-next" aria-label="Next reviews">→</button></div>
+    </section>
+
+    <section class="team section section-light" aria-labelledby="team-title">
+      <div class="team-intro">
+        <span class="eyebrow reveal">The human side of real estate</span>
+        <h2 class="display reveal" id="team-title">A team that feels<br><em>within reach.</em></h2>
       </div>
       <div class="team-grid">
-        <article class="team-card reveal"><img src="assets/images/daniel-lewis-instagram.jpg" alt="Daniel Lewis, JL+CoRE" loading="lazy"><div><strong>Daniel Lewis</strong><span>JL+CoRE agent</span></div></article>
-        <article class="team-card reveal"><img src="assets/images/samantha-grosvenor-instagram.jpg" alt="Samantha Grosvenor, JL+CoRE" loading="lazy"><div><strong>Samantha Grosvenor</strong><span>JL+CoRE agent</span></div></article>
-        <article class="team-card team-card-type reveal"><div class="team-type">CoRE</div><div><strong>Built around people</strong><span>Local expertise · collaborative service</span></div></article>
+        <article class="person-card reveal"><img src="daniel-lewis.jpg" alt="Daniel Lewis from JL+CoRE social media" loading="lazy" /><div><span>JL+CoRE Team</span><strong>Daniel Lewis</strong></div></article>
+        <article class="person-card reveal"><img src="samantha-grosvenor.jpg" alt="Samantha Grosvenor from JL+CoRE social media" loading="lazy" /><div><span>JL+CoRE Team</span><strong>Samantha Grosvenor</strong></div></article>
+        <article class="team-manifesto reveal"><span>JL+</span><p>Personal service is not a feature. It is the operating model.</p></article>
       </div>
     </section>
 
-    <section class="neighborhoods section" aria-labelledby="neighborhood-title">
-      <div class="neighborhood-head">
-        <span class="eyebrow reveal">Boston knowledge</span>
-        <h2 class="display reveal" id="neighborhood-title">A city of neighborhoods.<br><em>A market of nuances.</em></h2>
-      </div>
-      <div class="neighborhood-list">
-        <article class="neighborhood-item reveal"><span>01</span><h3>South End</h3><p>Home base · brownstones · city rhythm</p></article>
-        <article class="neighborhood-item reveal"><span>02</span><h3>Jamaica Plain</h3><p>Residential character · green space · community</p></article>
-        <article class="neighborhood-item reveal"><span>03</span><h3>Brookline</h3><p>Classic homes · village feel · close to Boston</p></article>
-        <article class="neighborhood-item reveal"><span>04</span><h3>Greater Boston</h3><p>Local context for every move</p></article>
-      </div>
-    </section>
-
-    <section class="social-proof section" aria-labelledby="proof-title">
-      <div class="proof-badge reveal"><span>Best of Zillow</span><strong>’23 · ’24</strong></div>
-      <div class="proof-copy">
-        <span class="eyebrow reveal">Client experience</span>
-        <h2 class="display reveal" id="proof-title">The kind of service<br><em>people remember.</em></h2>
-        <blockquote class="review reveal">
-          <p>“She was fantastic from the start and continues to check in months after moving into my new condo.”</p>
-          <footer>— Shane T. · client testimonial shared by JL+CoRE</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <section class="valuation section" id="valuation" aria-labelledby="valuation-title">
+    <section class="valuation section section-accent" id="valuation">
       <div>
-        <span class="eyebrow reveal">Thinking of selling?</span>
-        <h2 class="display reveal" id="valuation-title">What could your<br><em>Boston home be worth?</em></h2>
+        <span class="eyebrow dark reveal">Thinking about selling?</span>
+        <h2 class="display reveal">What could your<br><em>Boston home be worth?</em></h2>
       </div>
       <form class="valuation-form reveal" action="#contact">
-        <label><span>Property address</span><input type="text" name="property-address" placeholder="Start with the address" required></label>
-        <button class="button button-orange" type="submit">Request a valuation <span>↗</span></button>
+        <label><span>Property address</span><input type="text" name="property-address" placeholder="Start with the address" /></label>
+        <button class="button button-dark" type="submit">Request a valuation <span>↗</span></button>
       </form>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-copy section">
-        <span class="eyebrow light reveal">Let’s talk about what’s next</span>
-        <h2 class="display reveal" id="contact-title">Your next move<br><em>starts here.</em></h2>
-        <p class="reveal">Buying, selling, renting or looking for property management? Tell JL+CoRE what you need and the right person can follow up.</p>
-        <form class="contact-form reveal" action="#" novalidate>
-          <div class="field-grid">
-            <label>First name<input name="first-name" autocomplete="given-name" required></label>
-            <label>Last name<input name="last-name" autocomplete="family-name" required></label>
-            <label>Email<input type="email" name="email" autocomplete="email" required></label>
-            <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
-          </div>
-          <label>I'm interested in<select name="interest" required><option value="">Choose one</option><option>Buying</option><option>Selling</option><option>Renting</option><option>Property Management</option><option>Home Valuation</option><option>Other</option></select></label>
-          <label>How can we help?<textarea name="message" rows="4" required></textarea></label>
-          <div class="form-bottom"><button class="button button-light" type="submit">Send inquiry <span>↗</span></button><small>Prefer a faster reply? <a href="sms:+18607291702">Text Jessica.</a></small></div>
-          <div class="form-status" aria-live="polite"></div>
+    <section class="contact section section-ink" id="contact">
+      <div class="contact-main">
+        <span class="eyebrow light reveal">Let’s talk</span>
+        <h2 class="display light reveal">Your next move<br><em>starts here.</em></h2>
+        <p class="reveal">Buying, selling, renting or managing a property? Start with a conversation.</p>
+        <form class="contact-form reveal" novalidate>
+          <div class="field-grid"><label>First name<input required name="first-name" autocomplete="given-name" /></label><label>Last name<input required name="last-name" autocomplete="family-name" /></label></div>
+          <div class="field-grid"><label>Email<input required type="email" name="email" autocomplete="email" /></label><label>Phone<input name="phone" autocomplete="tel" /></label></div>
+          <label>I'm interested in<select name="interest"><option>Buying</option><option>Selling</option><option>Renting</option><option>Property Management</option><option>Home Valuation</option><option>General Inquiry</option></select></label>
+          <label>How can JL+CoRE help?<textarea name="message" rows="4"></textarea></label>
+          <div class="form-bottom"><button class="button button-accent" type="submit">Send inquiry <span>↗</span></button><small>This preview opens your email app so no form data is stored on the demo site.</small></div>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </div>
       <aside class="contact-aside">
-        <div class="contact-card reveal"><span>Office</span><a href="tel:+16172864112">617.286.4112</a></div>
-        <div class="contact-card reveal"><span>Text Jessica</span><a href="sms:+18607291702">860.729.1702 <small>Text message ↗</small></a></div>
-        <div class="contact-card reveal"><span>Email</span><a href="mailto:business@jlcore.com">business@jlcore.com</a></div>
-        <div class="contact-card reveal"><span>Visit</span><address>89 W Concord Street<br>Boston, MA 02118</address></div>
-        <div class="contact-card reveal"><span>Instagram</span><a href="https://www.instagram.com/jlcore" target="_blank" rel="noopener">@jlcore ↗</a></div>
-        <div class="map-wrap reveal"><iframe title="JL+CoRE office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=89+W+Concord+Street+Boston+MA+02118&output=embed"></iframe></div>
+        <div class="contact-card"><span>Office</span><a href="tel:+16172864112">617.286.4112</a></div>
+        <div class="contact-card"><span>Text Jessica</span><a href="sms:+18607291702">860.729.1702 <small>Text message ↗</small></a></div>
+        <div class="contact-card"><span>Email</span><a href="mailto:hello@jlcore.com">hello@jlcore.com</a></div>
+        <div class="contact-card"><span>Visit</span><address>89 W Concord Street<br>Boston, MA 02118</address></div>
+        <div class="contact-card"><span>Instagram</span><a href="https://www.instagram.com/jlcore" target="_blank" rel="noopener">@jlcore ↗</a></div>
       </aside>
     </section>
   </main>
 
-  <nav class="mobile-contact-bar" aria-label="Quick contact">
-    <a href="tel:+16172864112"><span class="mobile-action-label">Call</span><span class="mobile-action-meta">Office</span></a>
-    <a class="mobile-action-primary" href="sms:+18607291702"><span class="mobile-action-label">Text</span><span class="mobile-action-meta">Jessica</span></a>
-    <a href="#contact"><span class="mobile-action-label">Contact</span><span class="mobile-action-meta">Inquiry</span></a>
-  </nav>
-
   <footer class="footer">
-    <a class="brand footer-brand" href="#top"><span class="brand-mark">JL</span><span class="brand-word">JL<span>+</span>CoRE</span></a>
-    <div class="footer-links"><a href="#properties">Properties</a><a href="#services">Services</a><a href="#management">Management</a><a href="sms:+18607291702">Text Jessica</a><a href="privacy.html">Privacy</a></div>
-    <div class="footer-meta"><span>Real Estate & Property Management · Boston, MA</span><span>© <span id="year"></span> JL+CoRE</span></div>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">JL</span><span class="brand-copy"><strong>JL+CoRE</strong><small>Boston · MA</small></span></a>
+    <div class="footer-links"><a href="https://www.jlcore.com/our-core-listings/" target="_blank" rel="noopener">Listings</a><a href="#services">Services</a><a href="#jessica">Jessica</a><a href="privacy.html">Privacy</a></div>
+    <div class="footer-meta"><span>© <span id="year"></span> JL+CoRE</span><span>Preview concept · not indexed</span></div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <div class="mobile-contact-bar" aria-label="Quick contact">
+    <a href="tel:+16172864112"><span>Call</span><small>Office</small></a>
+    <a class="mobile-action-primary" href="sms:+18607291702"><span>Text</span><small>Jessica</small></a>
+    <a href="#contact"><span>Contact</span><small>Start here</small></a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
