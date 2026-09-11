@@ -39,3 +39,4 @@
   .mobile-action-label{font-size:.69rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
   .mobile-action-meta{font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;opacity:.68}
 }
+.form-bottom small a{color:#fff;text-decoration:underline;text-underline-offset:3px}.form-bottom small a:hover{color:var(--orange)}

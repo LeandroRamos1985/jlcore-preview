@@ -98,7 +98,7 @@
       <div class="intro-grid">
         <h2 class="display reveal">Local expertise.<br><em>Human guidance.</em></h2>
         <div class="intro-copy reveal">
-          <p>JL+CoRE is positioned as a boutique brokerage: close enough to know the details, experienced enough to navigate a competitive market, and responsive enough to make the process feel genuinely personal.</p>
+          <p>JL+CoRE is a boutique brokerage built around personal service: close enough to know the details, experienced enough to navigate a competitive market, and responsive enough to make the process feel genuinely personal.</p>
           <a class="text-link" href="#about">Meet JL+CoRE <span>↗</span></a>
         </div>
       </div>
@@ -109,14 +109,14 @@
         <span class="eyebrow">Property search</span>
         <h2 class="display" id="property-search-title">Find the address<br><em>that fits the life.</em></h2>
       </div>
-      <form class="property-search reveal" action="#contact" aria-label="Property search preview">
-        <label><span>Location</span><input type="text" placeholder="Neighborhood, city or address" /></label>
-        <label><span>Price</span><select><option>Any price</option><option>$500K–$750K</option><option>$750K–$1M</option><option>$1M+</option></select></label>
-        <label><span>Beds</span><select><option>Any beds</option><option>1+</option><option>2+</option><option>3+</option></select></label>
-        <label><span>Type</span><select><option>All homes</option><option>Condo</option><option>Single family</option><option>Multi-family</option></select></label>
-        <button class="search-submit" type="submit">Search <span>→</span></button>
+      <form class="property-search reveal" action="#contact" aria-label="Property search">
+        <label><span>Location</span><input type="text" name="location" placeholder="Neighborhood, city or address" /></label>
+        <label><span>Price</span><select name="price"><option>Any price</option><option>$500K–$750K</option><option>$750K–$1M</option><option>$1M+</option></select></label>
+        <label><span>Beds</span><select name="beds"><option>Any beds</option><option>1+</option><option>2+</option><option>3+</option></select></label>
+        <label><span>Type</span><select name="type"><option>All homes</option><option>Condo</option><option>Single family</option><option>Multi-family</option></select></label>
+        <button class="search-submit" type="submit">Start search <span>→</span></button>
       </form>
-      <p class="technical-note reveal">Concept search experience · live inventory, filters, map search and listing pages can be connected to JL+CoRE’s approved IDX/MLS platform.</p>
+      <p class="technical-note reveal">Tell us what you’re looking for — neighborhood, budget and property type — and the JL+CoRE team can help guide your search.</p>
     </section>
 
     <section class="portfolio section" aria-labelledby="portfolio-title">
@@ -125,12 +125,12 @@
           <span class="eyebrow reveal">JL+CoRE in the market</span>
           <h2 class="display reveal" id="portfolio-title">Real homes.<br><em>Real Boston stories.</em></h2>
         </div>
-        <p class="reveal">A selection of real JL+CoRE properties and spaces, presented with a more editorial, design-led approach. Final production media should use the original approved files.</p>
+        <p class="reveal">A closer look at homes and spaces from the JL+CoRE portfolio — presented with the care, context and local perspective every move deserves.</p>
       </div>
       <div class="portfolio-grid">
         <article class="property-feature property-feature-large reveal">
           <img src="assets/images/brookline-instagram.jpg" alt="Bright Brookline living room featured by JL+CoRE" loading="lazy" />
-          <div class="property-caption"><span>Brookline</span><strong>$1,050,000</strong><small>Selected JL+CoRE property</small></div>
+          <div class="property-caption"><span>Brookline</span><strong>Residential property</strong><small>From the JL+CoRE portfolio</small></div>
         </article>
         <article class="property-feature reveal">
           <img src="assets/images/jamaica-plain-instagram.jpg" alt="JL+CoRE property in Jamaica Plain" loading="lazy" />
@@ -232,7 +232,7 @@
         <h2 class="display reveal" id="valuation-title">What could your<br><em>Boston home be worth?</em></h2>
       </div>
       <form class="valuation-form reveal" action="#contact">
-        <label><span>Property address</span><input type="text" placeholder="Start with the address" required></label>
+        <label><span>Property address</span><input type="text" name="property-address" placeholder="Start with the address" required></label>
         <button class="button button-orange" type="submit">Request a valuation <span>↗</span></button>
       </form>
     </section>
@@ -251,7 +251,7 @@
           </div>
           <label>I'm interested in<select name="interest" required><option value="">Choose one</option><option>Buying</option><option>Selling</option><option>Renting</option><option>Property Management</option><option>Home Valuation</option><option>Other</option></select></label>
           <label>How can we help?<textarea name="message" rows="4" required></textarea></label>
-          <div class="form-bottom"><button class="button button-light" type="submit">Send inquiry <span>↗</span></button><small>Concept preview · live lead routing can connect to JL+CoRE’s preferred email/CRM workflow.</small></div>
+          <div class="form-bottom"><button class="button button-light" type="submit">Send inquiry <span>↗</span></button><small>Prefer a faster reply? <a href="sms:+18607291702">Text Jessica.</a></small></div>
           <div class="form-status" aria-live="polite"></div>
         </form>
       </div>
@@ -275,7 +275,7 @@
   <footer class="footer">
     <a class="brand footer-brand" href="#top"><span class="brand-mark">JL</span><span class="brand-word">JL<span>+</span>CoRE</span></a>
     <div class="footer-links"><a href="#properties">Properties</a><a href="#services">Services</a><a href="#management">Management</a><a href="sms:+18607291702">Text Jessica</a><a href="privacy.html">Privacy</a></div>
-    <div class="footer-meta"><span>Real Estate & Property Management · Boston, MA</span><span>© <span id="year"></span> JL+CoRE · Concept preview</span></div>
+    <div class="footer-meta"><span>Real Estate & Property Management · Boston, MA</span><span>© <span id="year"></span> JL+CoRE</span></div>
   </footer>
 
   <script src="script.js" defer></script>

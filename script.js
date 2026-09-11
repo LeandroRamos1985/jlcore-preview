@@ -60,13 +60,30 @@
     document.querySelectorAll('video').forEach(v => paused ? v.pause() : v.play().catch(() => {}));
   });
 
+  const contact = document.querySelector('#contact');
+  const interest = document.querySelector('.contact-form select[name="interest"]');
+  const message = document.querySelector('.contact-form textarea[name="message"]');
+
   document.querySelector('.property-search')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+    const data = new FormData(e.currentTarget);
+    const summary = [
+      `Location: ${data.get('location') || 'Open'}`,
+      `Price: ${data.get('price') || 'Any price'}`,
+      `Beds: ${data.get('beds') || 'Any beds'}`,
+      `Property type: ${data.get('type') || 'All homes'}`
+    ].join('\n');
+    if (interest) interest.value = 'Buying';
+    if (message) message.value = `I'm interested in a property search.\n\n${summary}`;
+    contact?.scrollIntoView({ behavior: 'smooth' });
   });
+
   document.querySelector('.valuation-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+    const address = e.currentTarget.querySelector('[name="property-address"]')?.value?.trim();
+    if (interest) interest.value = 'Home Valuation';
+    if (message) message.value = address ? `I'd like a home valuation for: ${address}` : "I'd like a home valuation.";
+    contact?.scrollIntoView({ behavior: 'smooth' });
   });
 
   const form = document.querySelector('.contact-form');
@@ -86,6 +103,21 @@
       if (status) status.textContent = 'Please enter a valid email address.';
       return;
     }
-    if (status) status.textContent = 'Concept preview — this form is not collecting or sending data yet.';
+
+    const data = new FormData(form);
+    const first = data.get('first-name') || '';
+    const last = data.get('last-name') || '';
+    const topic = data.get('interest') || 'Real estate inquiry';
+    const subject = encodeURIComponent(`JL+CoRE website inquiry — ${topic}`);
+    const bodyText = [
+      `Name: ${first} ${last}`.trim(),
+      `Email: ${data.get('email') || ''}`,
+      `Phone: ${data.get('phone') || ''}`,
+      `Interest: ${topic}`,
+      '',
+      data.get('message') || ''
+    ].join('\n');
+    if (status) status.textContent = 'Opening your email app…';
+    window.location.href = `mailto:business@jlcore.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
   });
 })();
