@@ -88,3 +88,9 @@ Status legend: **DONE** = implemented in this preview; **READY** = structure exi
 
 ## Notes
 The 72-item gate is intentionally integrated into development rather than treated as a last-minute checklist. Items marked READY/LAUNCH are not claimed as completed until the real domain, IDX, CRM, analytics, approved media and client legal content are configured.
+
+
+## V2.3 SMS conversion-path note
+- Mobile sticky CTA now supports Call · Text · Contact.
+- SMS deep link uses Jessica Later's public professional cell: +1 860-729-1702.
+- Launch validation must test SMS on iPhone and Android and reconfirm the preferred public texting number with the client.

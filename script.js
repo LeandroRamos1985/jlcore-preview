@@ -22,6 +22,15 @@
     menuBtn.setAttribute('aria-expanded', String(!open));
     mobileNav.hidden = open;
     body.style.overflow = open ? '' : 'hidden';
+    if (!open) mobileNav?.querySelector('a')?.focus();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menuBtn?.getAttribute('aria-expanded') === 'true') {
+      mobileNav.hidden = true;
+      menuBtn.setAttribute('aria-expanded','false');
+      body.style.overflow = '';
+      menuBtn.focus();
+    }
   });
   mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileNav.hidden = true;
@@ -62,20 +71,21 @@
 
   const form = document.querySelector('.contact-form');
   form?.addEventListener('submit', (e) => {
+    e.preventDefault();
     const required = [...form.querySelectorAll('[required]')];
     const invalid = required.find(el => !String(el.value || '').trim());
     const email = form.querySelector('input[type=email]');
     const status = form.querySelector('.form-status');
     if (invalid) {
-      e.preventDefault();
       invalid.focus();
       if (status) status.textContent = 'Please complete the required fields.';
       return;
     }
     if (email && !/^\S+@\S+\.\S+$/.test(email.value)) {
-      e.preventDefault();
       email.focus();
       if (status) status.textContent = 'Please enter a valid email address.';
+      return;
     }
+    if (status) status.textContent = 'Concept preview — this form is not collecting or sending data yet.';
   });
 })();
