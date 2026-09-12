@@ -1,1 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page Not Found | JL+CoRE</title><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml"></head><body><main class="section-pad" style="min-height:100vh;display:grid;align-content:center"><div class="section-kicker">404</div><h1 class="display" style="font-size:clamp(3.4rem,8vw,7rem)">Wrong address.<br><em>We can fix that.</em></h1><p><a class="text-link" href="index.html">Return home <span>←</span></a></p></main></body></html>
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="pageTitle">Página não encontrada | Ana Roque — PIA Realty</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{ --ink:#15120d; --ivory:#f6f1e6; --champagne:#c6a15b; --serif:"Fraunces", Georgia, serif; --sans:"Manrope", sans-serif; }
+*{box-sizing:border-box;}
+body{margin:0; background:var(--ink); color:var(--ivory); font-family:var(--sans); min-height:100svh; display:flex; align-items:center; justify-content:center; padding:24px; text-align:center;}
+.wrap{max-width:560px;}
+.code{font-family:var(--serif); font-size:5.5rem; color:var(--champagne); line-height:1; margin-bottom:8px;}
+h1{font-family:var(--serif); font-weight:400; font-size:clamp(1.5rem,3.4vw,2.1rem); margin:0 0 16px;}
+p{color:rgba(246,241,230,0.78); line-height:1.6; margin:0 0 30px;}
+.actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+.btn{display:inline-flex; align-items:center; gap:8px; padding:14px 26px; border-radius:999px; font-weight:600; font-size:0.9rem; text-decoration:none;}
+.btn-gold{background:var(--champagne); color:var(--ink);}
+.btn-outline{border:1px solid rgba(246,241,230,0.3); color:var(--ivory);}
+.lang-switch{margin-top:40px; display:inline-flex; gap:2px; border:1px solid rgba(246,241,230,0.2); border-radius:999px; padding:3px;}
+.lang-switch button{background:none; border:none; color:var(--ivory); font-family:var(--sans); font-weight:700; font-size:0.72rem; padding:6px 12px; border-radius:999px; cursor:pointer;}
+.lang-switch button[aria-pressed="true"]{background:var(--champagne); color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="code">404</div>
+  <h1 data-i18n="e_title">Este endereço não existe (ainda).</h1>
+  <p data-i18n="e_body">A página que você procura foi movida ou não está mais disponível. Volte à página inicial ou fale diretamente com Ana Roque.</p>
+  <div class="actions">
+    <a href="index.html" class="btn btn-gold" data-i18n="e_home">Ir para a Página Inicial</a>
+    <a href="https://wa.me/16172019188" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="e_whatsapp">Falar no WhatsApp</a>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button data-lang-btn="pt" aria-pressed="true">PT</button>
+    <button data-lang-btn="en" aria-pressed="false">EN</button>
+    <button data-lang-btn="es" aria-pressed="false">ES</button>
+  </div>
+</div>
+<script>
+const t = {
+  pt:{ title:"Página não encontrada | Ana Roque — PIA Realty", e_title:"Este endereço não existe (ainda).",
+       e_body:"A página que você procura foi movida ou não está mais disponível. Volte à página inicial ou fale diretamente com Ana Roque.",
+       e_home:"Ir para a Página Inicial", e_whatsapp:"Falar no WhatsApp" },
+  en:{ title:"Page Not Found | Ana Roque — PIA Realty", e_title:"This address doesn't exist (yet).",
+       e_body:"The page you're looking for was moved or is no longer available. Head back to the homepage or reach Ana Roque directly.",
+       e_home:"Go to Homepage", e_whatsapp:"Chat on WhatsApp" },
+  es:{ title:"Página No Encontrada | Ana Roque — PIA Realty", e_title:"Esta dirección no existe (todavía).",
+       e_body:"La página que busca fue movida o ya no está disponible. Vuelva al inicio o contacte directamente a Ana Roque.",
+       e_home:"Ir al Inicio", e_whatsapp:"Hablar por WhatsApp" }
+};
+function applyLang(lang){
+  const d = t[lang] || t.pt;
+  document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
+  document.getElementById("pageTitle").textContent = d.title;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.getAttribute("data-i18n");
+    if(d[key]) el.textContent = d[key];
+  });
+  document.querySelectorAll("[data-lang-btn]").forEach(btn=>{
+    btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn")===lang ? "true":"false");
+  });
+}
+document.querySelectorAll("[data-lang-btn]").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLang(btn.getAttribute("data-lang-btn")));
+});
+applyLang((navigator.language||"pt").slice(0,2));
+</script>
+</body>
+</html>

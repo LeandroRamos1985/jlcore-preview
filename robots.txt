@@ -1,8 +1,5 @@
-# PREVIEW MODE — intentionally hidden from search engines.
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /thank-you.html
 
-# PRODUCTION: replace the block above with:
-# User-agent: *
-# Allow: /
-# Sitemap: https://www.jlcore.com/sitemap.xml
+Sitemap: https://www.anaroquerealty.com/sitemap.xml
